@@ -31,11 +31,21 @@ function App() {
   setCounters([...newCounters]);
  };
 
+ const deleteCounter = (id) => {
+  const newCounters = counters.filter(item => item.id !== id);
+  setCounters([...newCounters]);
+ };
+
   return (
     <div className="App">
       <button onClick={handleBtnToAddArr}>Add counter</button>
       {counters.map(counter => {
-        return <Counter key={counter.id} count={counter.value} id={counter.id} updateCounter={updateCounter} />
+        return <Counter 
+                key={counter.id} 
+                count={counter.value} 
+                id={counter.id} 
+                updateCounter={updateCounter}
+                deleteCounter={deleteCounter} />
       })}
     </div>
   );
