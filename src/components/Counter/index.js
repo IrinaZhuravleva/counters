@@ -21,9 +21,9 @@ export const Counter = ({
                 <button onClick={handleDeleteClick}>delete</button>
             </div>
             
-            <button onClick={handleClick} name='decrement'>+</button>
+            <button onClick={handleClick} name='decrement'>-</button>
             <span id='counter'>{count}</span>
-            <button onClick={handleClick} name='increment'>-</button>
+            <button onClick={handleClick} name='increment'>+</button>
         </>
     )
 }
