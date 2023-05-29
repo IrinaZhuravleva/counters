@@ -11,11 +11,6 @@ function App() {
       value: 1
     }
   ]);
-
-  // const handleClick = (event) => {
-  //     console.log(event.target.id);
-  //     (event.target.name === 'increment') ? setCount(count + 1) : setCount(count - 1);
-  // };
   
  const handleBtnToAddArr = () => {
   setCounters([...counters, {
